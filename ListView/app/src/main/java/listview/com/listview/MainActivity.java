@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,13 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
        items=new ArrayList<String>();
         source=new String[sourceSize];
-        Button show_more=(Button)findViewById(R.id.button);
         ListView listView=(ListView)findViewById(R.id.listView);
         FrameLayout footerLayout = (FrameLayout) getLayoutInflater().inflate(R.layout.footerview, null);
         listView.addFooterView(footerLayout);
          setSource();
        dynamicallyAddItems();
-        listView.addFooterView(show_more);
     }
     public void dynamicallyAddItems(){
         int i;
