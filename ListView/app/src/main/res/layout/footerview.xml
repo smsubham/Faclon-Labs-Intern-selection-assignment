@@ -3,10 +3,12 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
     >
+
     <Button
-        android:layout_width="750px"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnGetMoreResults"
-        android:layout_marginLeft="10px"
-        android:text="Get more" />
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="                                       Load More                                       "
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal|top"
+        android:onClick="onClick"/>
 </FrameLayout>
